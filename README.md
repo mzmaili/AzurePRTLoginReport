@@ -71,8 +71,6 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
  
 
 ```azurepowershell
-<#  
- 
 .SYNOPSIS 
     AzurePRTLoginReport PowerShell script. 
  
@@ -140,4 +138,3 @@ Users with Enterprise PRT = YES: 1
 Users with Enterprise PRT = NO: 2 
 Users with WHfB Enabled: 1 
 Users with WHfB Disabled: 2 
-#>
