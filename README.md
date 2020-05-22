@@ -11,7 +11,7 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
 
  
 
-### Why is this script useful?
+#### Why is this script useful?
 
 - To check AzureAD PRT, Enterprise PRT status for the logged on user.
 - To check Windows Hello for Business (WHfB) status for the logged on user.
@@ -19,7 +19,7 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
 - To generate a friendly CSV/Excel report with the status.
 - To show the result on Grid View, so you can easily search in the result. 
 
-### What does this script do?
+#### What does this script do?
 
 - Checks AzureAD PRT status.
 - Checks Enterprise PRT status.
@@ -28,7 +28,7 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
 
  
 
-### Prepare the setup before executing the script:
+#### Prepare the setup before executing the script:
 
 1. Configure shared folder:
 
@@ -60,7 +60,7 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
 
  
 
-### User experience:
+#### User experience:
 
 - Checking PRT: 
 
