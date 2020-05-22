@@ -63,8 +63,9 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
 User experience:
 
 - Checking PRT: 
-![Alt text](https://github.com/mzmaili/AzurePRTLoginReport/blob/master/1.PNG "Checking PRT")
+
+![Alt text](https://github.com/mzmaili/AzurePRTLoginReport/blob/master/1.png "Checking PRT")
 
 - The output report: 
-![Alt text](https://github.com/mzmaili/AzurePRTLoginReport/blob/master/2.PNG "CSV output")
+![Alt text](https://github.com/mzmaili/AzurePRTLoginReport/blob/master/2.png "CSV output")
  
