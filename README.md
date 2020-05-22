@@ -69,3 +69,75 @@ AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Win
 - The output report: 
 ![Alt text](https://github.com/mzmaili/AzurePRTLoginReport/blob/master/2.png "CSV output")
  
+
+```azurepowershell
+<#  
+ 
+.SYNOPSIS 
+    AzurePRTLoginReport PowerShell script. 
+ 
+.DESCRIPTION 
+    AzurePRTLoginReport.ps1 is a PowerShell script checks Azure PRT, Enterprise PRT and WHfB status. 
+ 
+.AUTHOR: 
+    Mohammad Zmaili 
+ 
+.PARAMETER 
+    SourceFolder 
+    Allows you to specify devices list from CSV/TXT/XLS file. 
+    Note: make sure that the file contacis column wiht the name of "DeviceName" that includes the device name. 
+ 
+.PARAMETER 
+    OutputFolder 
+    Allows you to check devices in specific OU or container. 
+    Note: you can check all devices by following OU parameter with "all". 
+ 
+.PARAMETER 
+    OnScreenReport 
+    Displays The health check result on PowerShell screen. 
+ 
+.PARAMETER 
+    ExcelReport 
+    Generates Excel report and saves the result into it, if this switch not selected script will generate a CSV report. 
+ 
+ 
+.EXAMPLE 
+    .\AzurePRTLoginReport.ps1 
+    Search for the TXT files that hold the user login information, analyse them and then, generates CSV report. 
+ 
+.EXAMPLE 
+    .\AzurePRTLoginReport.ps1 -SourceFolder "\\FileServer\UsersLogs" -OutputFolder "\\SharedFolder\AzurePRTLoginReport" 
+    Search for the TXT files that hold the user login information in the entered folder, analyse them and then, export CSV report to the entered shared folder location. 
+ 
+.EXAMPLE 
+    .\AzurePRTLoginReport.ps1 -ExcelReport 
+        Search for the TXT files that hold the user login information, analyse them and then, generates Excel report. 
+ 
+ 
+Output for a single device: 
+----------- 
+User Name        : User 
+Device Name      : HYBRID 
+Device ID        : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
+TpmProtected     : YES 
+KeyProvider      : Microsoft Platform Crypto Provider 
+Domain Joined    : YES 
+Domain Name      : DOMAIN 
+AzureAD Join     : YES 
+AzureAD PRT      : YES 
+Enterprise Prt   : YES 
+WHfB Enabled     : YES 
+Last Logon (UTC) : 7/13/2019 11:46:37 AM 
+ 
+ 
+================================== 
+|AzureAD PRT Login Status Report:| 
+================================== 
+Number of checked users: 3 
+Users with AzureAD PRT = YES: 2 
+Users with AzureAD PRT = NO: 1 
+Users with Enterprise PRT = YES: 1 
+Users with Enterprise PRT = NO: 2 
+Users with WHfB Enabled: 1 
+Users with WHfB Disabled: 2 
+#>
