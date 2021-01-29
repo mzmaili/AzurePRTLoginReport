@@ -1,4 +1,4 @@
-# AzurePRTLoginReport
+# Azure AD PRT Login Report
 AzurePRTLoginReport PowerShell script checks AzureAD PRT, Enterprise PRT and Windows Hello for Business (WHfB) status of the users who logged on to Hybrid Azure AD Joined and Azure AD Joined devices.
 
 When the user login successfully to Hybrid Azure AD device or Azure AD joined device, he acquires AzureAD PRT which is extermly important to enable Single Sign-on (SSO) and to pass Azure AD Conditional Access Policies that deals with "Hybrid Azure AD" and/or "Complaint" devices.
