@@ -172,7 +172,7 @@ if ($UsersLogsFolder.Count -ge 1){
     if ($DeviceId -ne $null) { $DeviceId = ($DeviceId.tostring() -split ":")[1].trim()} else {$DeviceId = "NA"}
 
     $OSName = $FileContent | Select-String "OS Name"
-    if ($OSName -ne $null) { $OSName = ($OSName.tostring() -split ":")[1].trim()} else {$OSName = "NA"}
+    if ($OSName -ne $null) { $OSName = ($OSName.tostring() -split "Name:")[1].trim()} else {$OSName = "NA"}
 
     $OSVersion = $FileContent | Select-String "OS Version"
     if ($OSVersion -ne $null) { $OSVersion = ($OSVersion.tostring() -split ":")[1].trim()} else {$OSVersion = "NA"}
