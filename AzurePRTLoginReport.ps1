@@ -186,7 +186,7 @@ if ($UsersLogsFolder.Count -ge 1){
     if ($AzureAdPrtExpiryTime -ne $null) { $AzureAdPrtExpiryTime = ($AzureAdPrtExpiryTime.tostring() -split ":")[1].trim()} else {$AzureAdPrtExpiryTime = "NA"}        
 
     $DeviceAuthStatus  = $FileContent | Select-String DeviceAuthStatus 
-    if ($DeviceAuthStatus  -ne $null) { $DeviceAuthStatus  = ($AzureAdPrtExpiryTime.tostring() -split ":")[1].trim()} else {$DeviceAuthStatus  = "NA"}        
+    if ($DeviceAuthStatus  -ne $null) { $DeviceAuthStatus  = ($DeviceAuthStatus.tostring() -split ":")[1].trim()} else {$DeviceAuthStatus  = "NA"}        
 
     $TpmProtected = $FileContent | Select-String TpmProtected
     if ($TpmProtected -ne $null) { $TpmProtected = ($TpmProtected.tostring() -split ":")[1].trim()} else {$TpmProtected = "NA"}
